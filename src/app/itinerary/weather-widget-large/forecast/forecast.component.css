@@ -1,0 +1,54 @@
+.col-md-1 {
+  display: inline;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-md-1 > div {
+  display: inline-block;
+  width: 90px;
+  height: 108px;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+img {
+  height: 48px;
+  width: 48px;
+}
+
+.weatherWidgetRow {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.middleRow {
+  margin-top: 0;
+}
+
+.bottomRow {
+  font-size: 30px;
+  margin: 0 auto 15px 30%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.largeFont {
+  font-size: 16px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.space {
+  margin-right: 3px;
+}

@@ -1,0 +1,14 @@
+<div id="divWeatherMain">
+  <div class="weatherWidgetRow">
+    <img [src]="weatherIconsPath + icon + '.png'"
+         [alt]="currentWeatherDescription">
+  </div>
+  <div class="weatherWidgetRow" style="font-size: 32px;;">{{ currentTemp}}°</div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">{{ maxTemperature }}° / {{ minTemperature }}°</div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">Feels Like: {{ feelsLike }}°</div>
+  <div class="weatherWidgetRow" style="font-size: 28px;"> {{ city }} </div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">Humidity: {{ humidity }}%</div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">UV Index: {{ uvi }}</div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">Sunrise: {{ sunrise }} </div>
+  <div class="weatherWidgetRow" style="font-size: 14px;">Sunset: {{ sunset }} </div>
+</div>

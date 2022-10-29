@@ -1,0 +1,20 @@
+<ng-container>
+  <table>
+    <tr>
+      <td class="time">
+        {{ individualEvent.startTime }}:
+      </td>
+      <td class="event-name">
+        {{ individualEvent.event }}
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="event-name">
+        <ul>
+          <li *ngIf="individualEvent.notes">&#9702;&nbsp;&nbsp;{{ individualEvent.notes }}</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</ng-container>

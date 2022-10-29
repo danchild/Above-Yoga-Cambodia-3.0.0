@@ -1,0 +1,15 @@
+<div class="col-md-1">
+  <div>
+    <div class="weatherWidgetRow">
+      <img [src]="weatherIconsPath + icon + '.png'" [alt]="description">
+    </div>
+    <div class="weatherWidgetRow middleRow largeFont" *ngIf="time === 'Now'; else tempObject">{{ time }}</div>
+    <ng-template #tempObject>
+      <div class="center">
+        <div class="weatherWidgetRow middleRow inline largeFont space">{{ time.hour }}</div>
+        <div class="weatherWidgetRow middleRow inline smallFont">{{ time.meridiem }}</div>
+      </div>
+    </ng-template>
+    <div class="weatherWidgetRow bottomRow">{{ temp }}°</div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="restaurant raised-box">
+  <div class="classOne">
+    <a style="margin-bottom: 0;" [href]="restaurant.websiteUrl" target="_blank"><img [src]="restaurant.image"
+                                                                                     [alt]="restaurant.name"></a>
+  </div>
+  <div class="classThree">
+    <p class="classFour">{{ restaurant.name }}</p>
+    <p class="classFive">{{ restaurant.description }}</p>
+    <p class="classSix"><a [href]="restaurant.tripAdvisorUrl"
+                           target="_blank">{{restaurant.type === 'trip-advisor' ? 'View on Trip Advisor' : 'View Website'}}</a>
+    </p>
+  </div>
+</div>

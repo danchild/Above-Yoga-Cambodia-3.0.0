@@ -1,0 +1,22 @@
+.footer {
+  background-color: #081359;
+  font-family: sans-serif;
+  height: 120px;
+  color: white;
+}
+
+@media (max-width: 349px) {
+  .footer {
+    font-size: small;
+  }
+}
+
+p {
+  text-align: center;
+  padding: 50px;
+}
+
+.raised-box {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

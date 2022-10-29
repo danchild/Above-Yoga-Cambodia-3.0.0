@@ -1,0 +1,27 @@
+button {
+  margin-bottom: 20px;
+  background: rgb(40, 174, 228);
+  border-color: rgb(40, 174, 228);
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.margin {
+  margin-top: 40px;
+}
+
+.ten {
+  margin-left: 10px
+}
+
+.body {
+  height: 750px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 6px rgb(40, 174, 228);
+}

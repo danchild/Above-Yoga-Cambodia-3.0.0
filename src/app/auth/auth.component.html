@@ -1,0 +1,29 @@
+<div class="margin">
+  <div class="alert alert-danger" *ngIf="error">
+    <p>{{ error }}</p>
+  </div>
+  <div class="center" *ngIf="isLoading">
+    <app-loading-spinner></app-loading-spinner>
+    <div class="body"></div>
+  </div>
+  <div class="row ten">
+    <div class="col-xs-12">
+      <form (ngSubmit)="onSubmit(authForm)" #authForm="ngForm" *ngIf="!isLoading">
+        <div class="form-group">
+          <label for="email" style="font-weight: bold">Email</label>
+          <input type="email" id="email" class="form-control" ngModel name="email" required email>
+        </div>
+        <div class="form-group">
+          <label for="password" style="font-weight: bold">Password</label>
+          <input type="password" id="password" class="form-control" ngModel name="password" required minlength="6">
+        </div>
+        <div>
+          <button class="btn"
+                  type="submit"
+                  [disabled]="!authForm.valid">Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

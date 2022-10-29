@@ -1,0 +1,38 @@
+#divWeatherMain {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 370px;
+  background: #081359;
+  background: linear-gradient(0deg, #081359 35%, white);
+  color: white;
+  font-family: sans-serif;
+}
+
+.weatherWidgetRow {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0;
+}
+
+@keyframes movement {
+  from {
+    margin-left: -20px
+  }
+  to {
+    margin-left: 20px
+  }
+}
+
+img {
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  height: 80px;
+  width: 80px;
+  margin-top: 15px;
+}
+

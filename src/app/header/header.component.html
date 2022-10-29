@@ -1,0 +1,44 @@
+<div class="mainDiv fixed-top">
+  <nav class="container navbar navbar-expand-lg navbar-dark">
+    <a routerLink="/" (click)="showMobileMenu=false" class="navbar-brand">
+      <div>
+        <img [src]="aboveYogaImage" class="logo" alt="Above Yoga">
+      </div>
+      <div class="retreatName">{{ tripName }}</div>
+    </a>
+    <button class="navbar-toggler d-lg-none custom" type="button" data-toggle="collapse"
+            (click)="onToggleMenu()" *ngIf="isAuthenticated"><span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{ 'show': showMobileMenu }">
+      <div class="mx-auto">
+        <ul class="navbar-nav align-items-end" *ngIf="isAuthenticated && headerData">
+          <li class="nav-item" *ngIf="headerData.nav1">
+            <a class="menu-link" (click)="showMobileMenu=false"
+               routerLink="/" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact: true}">
+              {{ headerData.nav1 }} </a>
+          </li>
+          <li class="nav-item" *ngIf="headerData.nav2">
+            <a class="menu-link" (click)="showMobileMenu=false"
+               routerLink="/itinerary" routerLinkActive="isActive"
+               [routerLinkActiveOptions]="{exact: true}">{{ headerData.nav2 }}</a>
+          </li>
+          <li class="nav-item" *ngIf="headerData.nav3">
+            <a class="menu-link" (click)="showMobileMenu=false"
+               routerLink="/guests" routerLinkActive="isActive"
+               [routerLinkActiveOptions]="{exact: true}">{{ headerData.nav3 }}</a>
+          </li>
+          <li class="nav-item" *ngIf="headerData.nav4">
+            <a class="menu-link" (click)="showMobileMenu=false"
+               routerLink="/local-area" routerLinkActive="isActive"
+               [routerLinkActiveOptions]="{exact: true}">{{ headerData.nav4 }}</a>
+          </li>
+          <li class="nav-item" *ngIf="headerData.nav5">
+            <a class="menu-link" (click)="showMobileMenu=false"
+               routerLink="/google-drive" routerLinkActive="isActive"
+               [routerLinkActiveOptions]="{exact: true}">{{ headerData.nav5 }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

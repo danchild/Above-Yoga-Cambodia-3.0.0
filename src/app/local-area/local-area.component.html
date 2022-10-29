@@ -1,0 +1,51 @@
+<div class="container" style="width: 100%">
+  <div class="row">
+    <br>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div *ngIf="mode === 'multi-category' || mode === 'multi-location'">
+        <div style="display: inline-block;">
+          <mat-form-field style="margin-left: 5px" appearance="outline" class="sans-serif">
+            <mat-label class="sans-serif">Select Category</mat-label>
+            <mat-select [(value)]="selectedCategory" (selectionChange)="modifyCitiesList()" disableOptionCentering
+                        class="sans-serif">
+              <mat-option *ngFor="let category of categories" [value]="category.value" class="sans-serif">
+                {{category.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div style="display: inline-block; margin-left: 5px" *ngIf="mode === 'multi-location'">
+            <mat-form-field appearance="outline" class="sans-serif">
+              <mat-label class="sans-serif">Select City</mat-label>
+              <mat-select [(value)]="selectedCity" disableOptionCentering class="sans-serif">
+                <mat-option *ngFor="let city of cities" [value]="city.value" class="sans-serif">
+                  {{city.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="middle">
+          <app-loading-ellipses *ngIf="loading"></app-loading-ellipses>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <app-restaurant-list *ngIf="selectedCategory === 'category1'" [selectedCity]="selectedCity"
+                           [ngStyle]="{'visibility': loading ? 'hidden' : 'visible' }"></app-restaurant-list>
+      <app-poi-list *ngIf="selectedCategory === 'category2'" [selectedCity]="selectedCity"
+                    [ngStyle]="{'visibility': loading ? 'hidden' : 'visible' }"></app-poi-list>
+
+    </div>
+  </div>
+
+
+

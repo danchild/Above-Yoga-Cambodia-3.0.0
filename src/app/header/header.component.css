@@ -1,0 +1,64 @@
+.navbar-toggler.custom {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(86, 171, 223)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav > li {
+  vertical-align: bottom;
+  margin: 0 10px 3px 10px;
+}
+
+.menu-link {
+  color: white;
+  margin: 0 10px 0 10px;
+  padding: 0;
+  font-size: larger;
+  letter-spacing: 0.03rem;
+  font-weight: 350;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav > li {
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    height: 100px;
+  }
+}
+
+.mainDiv {
+  background-color: #081359;
+  width: 100%;
+}
+
+.logo {
+  max-height: 65px;
+  margin-bottom: 1px;
+}
+
+.retreatName {
+  font-family: 'Satisfy', cursive;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  margin: 1px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.ten {
+  margin-left: 10px
+}
+
+.isActive {
+  color: rgb(40, 174, 228);
+  text-decoration: none;
+}

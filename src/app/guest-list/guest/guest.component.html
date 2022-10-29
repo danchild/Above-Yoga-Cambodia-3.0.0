@@ -1,0 +1,21 @@
+<div class="guest raised-box">
+  <img class="picture" [src]="guest.image" [alt]="guest.name">
+  <div class="center">
+    <div class="blue">
+      <p class="name"> {{ guest.name }} </p>
+      <p class="marginFive"> {{ guest.city }}, {{ guest.state }} </p>
+      <a [href]="guest.american ? whatsAppUrl + this.formatService.internationalConversion(guest.cell)
+                                : whatsAppUrl.slice(0, -1) + this.formatService.internationalConversion(guest.cell)"
+         target="_blank"
+         *ngIf="guest.cell">
+        <p class="marginFive"><img class="icon borderRadius" [src]="whatsAppIcon" alt="Whatsapp">
+          {{ guest.cell }} </p>
+      </a>
+      <a [href]="this.instagramUrl + guest.instagramHandle.substring(1)" target="_blank" *ngIf="guest.instagramHandle">
+        <p class="marginFive"><img class="icon" [src]="instagramIcon" alt="Instagram">
+          {{ guest.instagramHandle }}</p>
+      </a>
+    </div>
+  </div>
+</div>
+

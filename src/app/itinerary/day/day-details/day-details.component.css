@@ -1,0 +1,53 @@
+.day-details {
+  padding: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  color: #081359;
+  font-family: sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6 {
+  color: rgb(40, 174, 228);
+  font-weight: bold;
+}
+
+mat-icon {
+  vertical-align: middle;
+}
+
+.map {
+  height: 550px;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.close {
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+}
+
+.container-modal {
+  border-style: solid;
+  border-color: #081359;
+  max-width: 450px;
+  width: 100%;
+}

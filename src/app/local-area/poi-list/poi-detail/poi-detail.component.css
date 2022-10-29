@@ -1,0 +1,52 @@
+.local-area {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #081359;
+  font-family: sans-serif;
+  border-style: solid;
+  border-color: #081359;
+  border-radius: 10px;
+  width: 300px;
+  height: 385px;
+  vertical-align: top;
+  position: relative;
+}
+
+img {
+  margin-top: 10px;
+  height: 150px;
+  width: 275px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+:host {
+  margin: auto;
+}
+
+h4 {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.classTwo {
+  margin-top: 20px;
+}
+
+.classThree {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.raised-box {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.classFive {
+  word-wrap: break-word;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

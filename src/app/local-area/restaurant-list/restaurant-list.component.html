@@ -1,0 +1,9 @@
+<div #mapContainer class="map raised-box"></div>
+<br>
+<hr>
+<br>
+<div class="row">
+  <app-restaurant *ngFor="let restaurant of restaurantList"
+                  [restaurant]="restaurant"></app-restaurant>
+</div>
+

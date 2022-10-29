@@ -1,0 +1,21 @@
+.weather-group {
+  margin-top: 30px;
+}
+
+.weather-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: linear-gradient(0deg, #081359 35%, white);
+  border-radius: 10px;
+  padding-right: 0rem;
+  padding-left: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  max-width: 1080px;
+}
+
+.raised-box {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,24 @@
+.map {
+  height: 550px;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid #081359;
+  width: 100%;
+}
+
+.raised-box {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

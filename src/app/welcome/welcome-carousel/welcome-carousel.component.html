@@ -1,0 +1,30 @@
+<div class="center" *ngIf="oneCallLoading && mapLayerLoading">
+  <div class="provideSkeleton">
+    <div class="middle">
+      <app-loading-ellipses></app-loading-ellipses>
+    </div>
+  </div>
+</div>
+<ngb-carousel class="carousel-box raised-box" [hidden]="oneCallLoading && mapLayerLoading">
+  <ng-template ngbSlide>
+    <app-weather-widget-small *ngIf="!oneCallLoading" [weatherData]="weatherData"
+                              [minTemperature]="minTemperature"
+                              [maxTemperature]="maxTemperature"
+                              [feelsLike]="feelsLike"
+                              [currentTemp]="currentTemp"
+                              [humidity]="humidity"
+                              [icon]="icon"
+                              [currentWeatherDescription]="currentWeatherDescription"
+                              [uvi]="uvi"
+                              [sunrise]="sunrise"
+                              [sunset]="sunset"></app-weather-widget-small>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div #mapContainer class="map"></div>
+  </ng-template>
+  <ng-template ngbSlide *ngFor="let image of images; let i = index">
+    <div class="picsum-img-wrapper">
+      <img class="carousel-box" [src]="image">
+    </div>
+  </ng-template>
+</ngb-carousel>

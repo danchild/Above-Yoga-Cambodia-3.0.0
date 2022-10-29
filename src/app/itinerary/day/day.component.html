@@ -1,0 +1,34 @@
+<div class="day mx-auto raised-box">
+  <div style="display: inline-block;">
+    <div class="styleOne">
+      {{ day.dayOfWeek }}
+    </div>
+    <div class="styleTwo">
+      {{ day.date }}
+    </div>
+  </div>
+  <div *ngIf="minForecast !== '0°'" class="styleThree">
+    <img class="styleFour" [src]="weatherIconsPath + icon + '.png'" [alt]="description">
+    <div class="styleFive">
+      {{ maxForecast }} / {{ minForecast }}
+    </div>
+  </div>
+  <hr class="event-hr">
+  <h6 class="location" *ngIf="day.location">
+    {{day.location}}
+  </h6>
+  <app-event *ngFor="let event of events" [individualEvent]="event"></app-event>
+  <div class="box">
+    <div class="row content">
+      <button class="btn pop-out" *ngIf="dayDetail.popUpButton" (click)="open(this.content)">
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </div>
+  </div>
+  <br>
+</div>
+
+<!--Day Details Pop-Up Window-->
+<ng-template #content>
+  <app-day-details [dayDetail]="dayDetail" [content]="content"></app-day-details>
+</ng-template>

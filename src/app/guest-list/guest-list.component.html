@@ -1,0 +1,7 @@
+<div class="spinner" *ngIf="loading">
+  <app-loading-spinner></app-loading-spinner>
+  <div class="body"></div>
+</div>
+<div class="row" *ngIf="!loading">
+  <app-guest *ngFor="let guest of guestList" [guest]="guest"></app-guest>
+</div>

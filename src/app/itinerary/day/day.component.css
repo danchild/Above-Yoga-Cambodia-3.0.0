@@ -1,0 +1,137 @@
+.day {
+  border-style: solid;
+  border-color: #081359;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  display: block;
+  color: #081359;
+  font-family: sans-serif;
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+}
+
+.location {
+  font-weight: bold;
+  color: rgb(40, 174, 228);
+  display: inline-block;
+  font-style: italic;
+}
+
+.event-hr {
+  border: 1px solid #081359
+}
+
+.event-hr-small {
+  display: none;
+}
+
+:host {
+  width: 100%;
+}
+
+@media (max-width: 374px) {
+  .day {
+    margin: 0 0 10px 0;
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .day {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 369px) {
+  .day {
+    margin: 0 0 10px 0;
+    width: 300px;
+    height: auto;
+    padding: 0;
+    border-style: none;
+  }
+
+  .event-hr {
+    display: none;
+  }
+
+  .event-hr-small {
+    display: block;
+  }
+
+  :host {
+    padding: 0;
+  }
+}
+
+img {
+  max-height: 40px;
+}
+
+table {
+  width: 100%;
+}
+
+.styleOne {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.styleTwo {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.styleThree {
+  display: inline-block;
+  text-align: left;
+  float: right;
+}
+
+.styleFour {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.styleFive {
+  display: inline-block;
+  font-size: medium;
+}
+
+.raised-box {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pop-out {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #081359;
+  position: absolute;
+  right: 5%;
+  top: 85%;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+mat-icon {
+  color: #081359;
+}

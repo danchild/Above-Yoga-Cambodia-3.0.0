@@ -1,0 +1,74 @@
+<div class="center" *ngIf="loading">
+  <app-loading-spinner></app-loading-spinner>
+  <div class="body"></div>
+</div>
+<div class="container" *ngIf="!loading">
+  <div class="row">
+    <div class="welcome-message col-md-6">
+      <div style="display: block">
+        <h4>{{ welcomeData.tagline }}</h4>
+        <h4 style="color: rgb(40, 174, 228);" *ngIf="translate">{{ welcomeData.taglineTranslate }}</h4>
+        <h4>{{ welcomeData.dateRange }}</h4>
+      </div>
+      <hr style="border: 1px solid #081359;">
+      <div style="display: block;">
+        <p>{{ welcomeData.paragraph1 }}</p>
+      </div>
+      <div style="display: block">
+        <p>{{ welcomeData.paragraph2 }}</p>
+      </div>
+      <div style="display: block">
+        <p style="font-weight: bold; margin: 0">𝗿𝗲·𝘁𝗿𝗲𝗮𝘁</p>
+        <p style="font-weight: bold; margin: 0">/𝗿əˈ𝘁𝗿ē𝘁/</p>
+        <p style="margin: 0">·</p>
+        <p style="margin: 0">verb + noun</p>
+        <p style="margin: 0">·</p>
+      </div>
+      <div style="display: block">
+        <p style="margin: 0"><span style="font-weight: bold">1.</span> an act of moving back or withdrawing</p>
+        <p style="margin: 0;"><span style="font-weight: bold">2.</span> an act of changing one's
+          decisions, plans, or attitude</p>
+        <p style="margin: 0;"><span style="font-weight: bold">3.</span> a quiet or secluded place
+          in which one can rest and relax</p>
+        <p style="margin: 0"><span style="font-weight: bold">4.</span> a period of seclusion for the purposes of
+          prayer and
+          meditation</p>
+      </div>
+      <div style="display: block">
+        <p style="margin: 0">·</p>
+        <p style="font-weight: bold; margin: 0">synonyms:</p>
+        <p style="margin: 0"> refuge</p>
+        <p style="margin: 0"> haven</p>
+        <p style="margin: 0"> sanctuary</p>
+        <p style="margin: 0"> hideaway</p>
+        <p style="margin: 0"> shelter</p>
+        <p style="margin: 0">·</p>
+      </div>
+      <div style="display: block">
+        <p>{{ welcomeData.paragraph3 }}</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <hr style="border: 1px solid #081359; width: 100%" class="welcome-hr">
+      <div style="width:310px;" class="mx-auto mt-4">
+        <div class="welcome-weather-center">
+          <app-carousel></app-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="border: 1px solid #081359;">
+  <div class="welcome-bottom">
+    <h4 class="welcome-font">Enjoying your retreat experience?</h4>
+    <div class="d-none d-md-block">
+      <p>Check out our <a [href]="aboveYogaUrl" target="_blank">upcoming retreats</a>. </p>
+      <!--        or <a-->
+      <!--        [href]="facebookUrl" target="_blank">leave us a review</a>.</p>-->
+    </div>
+    <div class="d-block d-sm-none">
+      <p>Check out our <a [href]="aboveYogaUrl" target="_blank">upcoming retreats</a>. </p>
+      <!--        or <a-->
+      <!--        [href]="facebookUrl" target="_blank">leave us a review</a>.</p>-->
+    </div>
+  </div>
+</div>

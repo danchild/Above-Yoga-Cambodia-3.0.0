@@ -1,0 +1,9 @@
+<div class="weather-group">
+  <div class="row mx-auto raised-box">
+    <app-forecast *ngFor="let time of times; let i = index"
+                  [time]="time"
+                  [temp]="temperatures[i]"
+                  [icon]="weatherData.hourly[i].weather[0].icon"
+                  [description]="weatherData.hourly[i].weather[0].description"></app-forecast>
+  </div>
+</div>

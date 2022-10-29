@@ -1,0 +1,29 @@
+.row {
+  margin: 20px 0 20px 0;
+}
+
+@media (max-width: 374px) {
+  .col-lg-4 {
+    padding: 0px;
+  }
+}
+
+.center {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.body {
+  height: 750px;
+}
+
+.asterisk {
+  font-family: sans-serif;
+  color: #081359;
+  font-style: italic;
+  word-wrap: break-word;
+}
+
+.bold {
+  font-weight: bold;
+}

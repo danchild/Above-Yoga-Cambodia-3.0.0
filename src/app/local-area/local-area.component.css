@@ -1,0 +1,33 @@
+.sans-serif {
+  font-family: sans-serif;
+  color: #081359;
+}
+
+mat-label {
+  font-weight: bold;
+}
+
+.mat-option[aria-selected="true"] {
+  color: rgb(86, 171, 223) !important;
+  background-color: rgba(0, 0, 0, 0.09) !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #081359 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: #081359 !important;
+}
+
+.mat-select-value {
+  color: #081359 !important;
+}
+
+.middle {
+  text-align: center;
+}
+
+.body {
+  height: 750px;
+}

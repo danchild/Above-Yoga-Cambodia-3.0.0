@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "above-yoga"
+  },
+  "targets": {
+    "above-yoga": {
+      "hosting": {
+        "above-yoga": [
+          "above-yoga"
+        ]
+      }
+    }
+  }
+}
