@@ -3,11 +3,11 @@
   <div class="center">
     <div class="blue">
       <p class="name"> {{ guest.name }} </p>
+      <p class="marginFive"> {{guest.pronouns}}</p>
       <p class="marginFive"> {{ guest.city }}, {{ guest.state }} </p>
       <a [href]="guest.american ? whatsAppUrl + this.formatService.internationalConversion(guest.cell)
                                 : whatsAppUrl.slice(0, -1) + this.formatService.internationalConversion(guest.cell)"
-         target="_blank"
-         *ngIf="guest.cell">
+        target="_blank" *ngIf="guest.cell">
         <p class="marginFive"><img class="icon borderRadius" [src]="whatsAppIcon" alt="Whatsapp">
           {{ guest.cell }} </p>
       </a>
@@ -18,4 +18,3 @@
     </div>
   </div>
 </div>
-

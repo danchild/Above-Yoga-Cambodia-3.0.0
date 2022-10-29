@@ -4,7 +4,7 @@
   border-style: solid;
   border-color: #081359;
   margin: 10px;
-  height: 375px;
+  height: 395px;
   width: 270px;
   font-weight: bold;
   font-family: sans-serif;
@@ -31,7 +31,7 @@ img.icon {
 }
 
 .center {
-  padding: 15px;
+  padding: 5px;
   position: absolute;
   top: 58%;
 }

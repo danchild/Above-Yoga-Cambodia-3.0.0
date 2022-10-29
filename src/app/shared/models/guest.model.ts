@@ -10,9 +10,18 @@ export class Guest {
   image: string;
   instagramHandle: string;
   american: boolean;
+  pronouns: string;
 
-  constructor(name: string, city: string, state: string, cell: string,
-              instagramHandle: string, image: string, american: boolean) {
+  constructor(
+    name: string,
+    city: string,
+    state: string,
+    cell: string,
+    instagramHandle: string,
+    image: string,
+    american: boolean,
+    pronouns: string
+  ) {
     this.name = name;
     this.city = city;
     this.state = state;
@@ -20,5 +29,6 @@ export class Guest {
     this.image = image;
     this.instagramHandle = instagramHandle;
     this.american = american;
+    this.pronouns = pronouns;
   }
 }
