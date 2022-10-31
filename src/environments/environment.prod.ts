@@ -36,7 +36,7 @@ export const environment = {
     { value: 'category2', viewValue: 'Points of Interest' },
   ],
   cities: [
-    // { value: 'city1', viewValue: 'Ennis' },
+    { value: 'city1', viewValue: 'Ennis' },
     // { value: 'city2', viewValue: 'Liscannor/Lahinch' },
     // { value: 'city3', viewValue: 'Galway' },
   ],

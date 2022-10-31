@@ -5,12 +5,12 @@
     </a>
   </div>
   <div class="classTwo">
-    <h1 class="classThree" style="padding-left: 10px">{{ poi.name }}</h1>
+    <h1 class="classThree" style="padding-left: 10px; padding-right: 5px">{{ poi.name }}</h1>
     <div style="padding-left: 10px">
+      <p class="classFive">{{ poi.description }}</p>
       <a [href]="poi.googleMapsUrl" target="_blank">
         <h4>{{ poi.address }}</h4>
       </a>
-      <p class="classFive">{{ poi.description }}</p>
     </div>
   </div>
 </div>
