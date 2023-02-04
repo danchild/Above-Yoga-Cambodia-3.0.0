@@ -21,7 +21,7 @@ export const environment = {
     measurementId: 'G-DCQ87LCQK8',
   },
   // Weather Widget Config
-  tripStartUnixTimeStamp: 1667620800, // Set to 12:00 am on starting day of trip
+  tripStartUnixTimeStamp: 1667707200, // Set to 12:00 am on starting day of trip
   mode: 'multi-category', // 'simple' is the other config name
   // Map Settings
   weatherSettings: [
