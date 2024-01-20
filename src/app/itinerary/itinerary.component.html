@@ -3,9 +3,8 @@
   <div class="body"></div>
 </div>
 <div *ngIf="!dataLoading && !weatherLoading">
-  <app-weather-widget-large [weatherData]="weatherData"
-                            [times]="times"
-                            [temperatures]="temperatures"></app-weather-widget-large>
+  <app-weather-widget-large [weatherData]="weatherData" [times]="times"
+    [temperatures]="temperatures"></app-weather-widget-large>
   <div class="row" *ngIf="asterisk.message" style="margin-bottom: 0">
     <div class="col-xs-12 asterisk">
       <ul style="list-style-type:none; padding: 15px; margin: 0;">
@@ -16,14 +15,10 @@
     </div>
   </div>
   <div class="row" style="margin-top: 0">
-    <app-day class="col-xl-4 col-lg-6" *ngFor="let day of itinerary; let i = index"
-             [day]="day"
-             [events]="day.events"
-             [minForecast]="minTemperatures[i] + '°'"
-             [maxForecast]="maxTemperatures[i] + '°'"
-             [icon]="weatherData.daily[i].weather[0].icon"
-             [description]="weatherData.daily[i].weather[0].description"
-             [dayDetail]="dayDetailsList[i]">
+    <app-day class="col-xl-4 col-lg-6" *ngFor="let day of itinerary; let i = index" [day]="day" [events]="day.events"
+      [minForecast]="minTemperatures[i] + '°'" [maxForecast]="maxTemperatures[i] + '°'"
+      [icon]="weatherData.daily[i].weather[0].icon" [description]="weatherData.daily[i].weather[0].description"
+      [dayDetail]="dayDetailsList[i]">
     </app-day>
   </div>
 </div>
