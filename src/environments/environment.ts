@@ -21,7 +21,7 @@ export const environment = {
     measurementId: 'G-DCQ87LCQK8',
   },
   // Weather Widget Config
-  tripStartUnixTimeStamp: 1667620800, // Set to 12:00 am on starting day of trip
+  tripStartUnixTimeStamp: 1705813200, // Set to 12:00 am on starting day of trip
   mode: 'multi-category', // 'simple' is the other config name
   // Map Settings
   weatherSettings: [
@@ -72,7 +72,6 @@ export const environment = {
   customUrl:
     "https://www.google.com/maps/place/18%C2%B032'00.9%22N+68%C2%B022'10.5%22W",
   custom: false, // Leave all Custom Marker Configs and toggle feature on with true or false
-
   heading: 'Retreat Villa',
 };
 
