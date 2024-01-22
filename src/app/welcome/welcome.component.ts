@@ -1,7 +1,7 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {environment} from '../../environments/environment';
-import {DataService} from '../shared/services/data.service';
-import {Subscription} from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { DataService } from '../shared/services/data.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-welcome',
@@ -10,6 +10,7 @@ import {Subscription} from 'rxjs';
 })
 
 export class WelcomeComponent implements OnInit, OnDestroy {
+  link = "https://photos.google.com/share/AF1QipMtWdILZJWh1B2T4H1fc0xPE26t6Mdiale2_dnrc-dvjrTxJFmGcePAYmJbA_7j4A?key=OEVueUg4TWUyWmF1dUNZZDBraFZLX2p4TXpZanZR";
   translate: boolean;
   aboveYogaUrl = environment.aboveYogaUrl;
   facebookUrl = environment.facebookUrl;
