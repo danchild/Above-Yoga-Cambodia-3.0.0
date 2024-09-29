@@ -1,0 +1,23 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      // Use the VARIANT arg to pick a Debian OS version: buster, bullseye
+      // Use bullseye when on local on arm64/Apple Silicon.
+      "NODE_VERSION": "14"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "onCreateCommand": "npm install && npm install -g @angular/cli@11",
+  "forwardPorts": [
+    4200
+  ],
+  "features": {
+    "git": "os-provided",
+    "github-cli": "latest"
+  }
+}
